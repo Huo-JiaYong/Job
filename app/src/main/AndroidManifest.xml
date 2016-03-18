@@ -1,11 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.yong.job">
+    package="com.yong.job" >
 
-    <application android:allowBackup="true"
-                 android:label="@string/app_name"
-                 android:icon="@mipmap/ic_launcher"
-                 android:theme="@style/AppTheme">
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".one.FirstActivity"
+            android:label="@string/title_activity_first" >
+        </activity>
+        <activity
+            android:name=".one.OtherActivity"
+            android:label="@string/title_activity_other" >
+            <intent-filter>
+                <action android:name="com.yong.job.one.IMPLICIT" />
 
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".one.LifeActivity"
+            android:label="@string/title_activity_life" >
+        </activity>
+        <activity
+            android:name=".one.LayoutActivity"
+            android:label="@string/title_activity_layout" >
+        </activity>
+        <activity
+            android:name=".one.ListActivity"
+            android:label="@string/title_activity_list" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

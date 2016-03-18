@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Job</string>
+    <string name="title_activity_oamain">Main</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_first">First</string>
+    <string name="title_activity_other">Other</string>
+    <string name="title_activity_life">LifeActivity</string>
+    <string name="title_activity_layout">Layout</string>
+    <string name="title_activity_list">List</string>
 </resources>

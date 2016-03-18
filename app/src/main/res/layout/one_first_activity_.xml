@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+    >
+
+    <Button
+        android:id="@+id/startActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="start other"
+        />
+
+    <Button
+        android:id="@+id/explicit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Explicit"
+        />
+
+    <Button
+        android:id="@+id/implicit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="implicit"
+        />
+
+    <Button
+        android:id="@+id/sendData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="send data"
+        />
+
+    <Button
+        android:id="@+id/getData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="get data"
+        />
+
+    <Button
+        android:id="@+id/life"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="life cycle"/>
+
+    <com.yong.job.one.MyLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.yong.job.one.MyLayout>
+</LinearLayout>
