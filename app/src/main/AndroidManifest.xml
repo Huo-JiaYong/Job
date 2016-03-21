@@ -1,42 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.yong.job" >
+<manifest
+    package="com.yong.job"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/blue"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme">
         <activity
             android:name=".one.FirstActivity"
-            android:label="@string/title_activity_first" >
+            android:label="@string/title_activity_first">
         </activity>
         <activity
             android:name=".one.OtherActivity"
-            android:label="@string/title_activity_other" >
+            android:label="@string/title_activity_other">
             <intent-filter>
-                <action android:name="com.yong.job.one.IMPLICIT" />
+                <action android:name="com.yong.job.one.IMPLICIT"/>
 
-                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
         <activity
             android:name=".one.LifeActivity"
-            android:label="@string/title_activity_life" >
+            android:label="@string/title_activity_life">
         </activity>
         <activity
             android:name=".one.LayoutActivity"
-            android:label="@string/title_activity_layout" >
+            android:label="@string/title_activity_layout">
         </activity>
         <activity
             android:name=".one.ListActivity"
-            android:label="@string/title_activity_list" >
+            android:label="@string/title_activity_list">
+        </activity>
+        <activity
+            android:name=".two.TwoMainActivity"
+            android:label="@string/title_activity_two_main">
+        </activity>
+        <activity
+            android:name=".two.FragmentLifeActivity"
+            android:label="@string/title_activity_fragment_life">
+        </activity>
+        <activity
+            android:name=".two.news.NewsContentActivity"
+            android:label="@string/title_activity_news_content">
+        </activity>
+        <activity
+            android:name=".two.news.NewsTitleActivity"
+            android:label="@string/title_activity_news_title">
+        </activity>
+        <activity
+            android:name=".two.qq.LoginActivity"
+            android:label="@string/title_activity_login">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity
+            android:name=".two.qq.QQActivity"
+            android:label="@string/title_activity_qq">
+        </activity>
+
+        <receiver android:name=".two.qq.OfflineReceiver">
+            <intent-filter>
+                <action android:name="com.yong.job.OFF_LINE"/>
+            </intent-filter>
+        </receiver>
     </application>
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+
 
 </manifest>

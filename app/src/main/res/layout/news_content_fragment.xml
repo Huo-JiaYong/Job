@@ -1,0 +1,48 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.yong.job.two.news.NewsContentFragment">
+
+
+    <LinearLayout
+        android:id="@+id/visibility_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/content_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="“冰晨”房产信息曝光 房管局：违纪人员被辞退"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/line"
+            android:scaleType="fitXY"
+            />
+
+        <TextView
+            android:id="@+id/content_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="20dp"
+            android:text="据山东省青岛市国土资源局和房屋管理局官方微博消息，针对日前有网友投诉青岛房管局泄露范冰冰李晨青岛购豪宅信息，青岛市国土资源局和房屋管理局今日通过官方微博回应称，青岛市不动产登记中心一名工作人员违反工作纪律，擅自查询当事人购房信息并发送到个人微信亲友群，现已被辞退。"
+            android:textSize="18sp"
+            />
+
+
+    </LinearLayout>
+
+</FrameLayout>

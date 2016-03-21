@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="15dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="15dp"
+    >
+
+    <fragment
+        android:id="@+id/top"
+        android:name="com.yong.job.two.TopFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout="@layout/two_top_fragment"></fragment>
+
+    <Button
+        android:id="@+id/addFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top"
+        android:text="add fragment"
+        />
+
+
+    <FrameLayout
+        android:id="@+id/botLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addFragment">
+
+        <fragment
+            android:id="@+id/bot"
+            android:name="com.yong.job.two.BotFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/addFragment"
+            tools:layout="@layout/two_bot_fragment"></fragment>
+    </FrameLayout>
+
+</RelativeLayout>
