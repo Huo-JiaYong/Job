@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest
-    package="com.yong.job"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest package="com.yong.job"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
 
     <application
         android:allowBackup="true"
@@ -52,11 +54,6 @@
         <activity
             android:name=".two.qq.LoginActivity"
             android:label="@string/title_activity_login">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
         </activity>
         <activity
             android:name=".two.qq.QQActivity"
@@ -68,9 +65,38 @@
                 <action android:name="com.yong.job.OFF_LINE"/>
             </intent-filter>
         </receiver>
+
+        <activity
+            android:name=".three.FileActivity"
+            android:label="@string/title_activity_file">
+        </activity>
+        <activity
+            android:name=".three.SharedActivity"
+            android:label="@string/title_activity_shared">
+        </activity>
+        <activity
+            android:name=".three.SQLiteActivity"
+            android:label="@string/title_activity_sqlite">
+        </activity>
+        <activity
+            android:name=".three.PhoneProviderActivity"
+            android:label="@string/title_activity_phone_provider">
+        </activity>
+        <activity
+            android:name=".three.MyProviderActivity"
+            android:label="@string/title_activity_my_provider">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="com.yong.job.three.MyProvider"
+            android:authorities="com.yong.job.provider"
+            android:exported="true"
+            ></provider>
     </application>
-
-    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
-
 
 </manifest>

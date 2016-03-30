@@ -18,4 +18,9 @@
     <string name="title_activity_news_title">News</string>
     <string name="title_activity_login">Login</string>
     <string name="title_activity_qq">QQActivity</string>
+    <string name="title_activity_file">File</string>
+    <string name="title_activity_shared">SharedA</string>
+    <string name="title_activity_sqlite">SQLite</string>
+    <string name="title_activity_phone_provider">Phone</string>
+    <string name="title_activity_my_provider">Provider</string>
 </resources>
