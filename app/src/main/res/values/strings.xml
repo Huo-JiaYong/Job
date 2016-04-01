@@ -23,4 +23,10 @@
     <string name="title_activity_sqlite">SQLite</string>
     <string name="title_activity_phone_provider">Phone</string>
     <string name="title_activity_my_provider">Provider</string>
+    <string name="title_activity_sms">SMS</string>
+    <string name="title_activity_notification">Notification</string>
+    <string name="title_activity_camera">Camera</string>
+    <string name="title_activity_media">Media</string>
+    <string name="title_activity_asyn_task">AsynTask</string>
+    <string name="title_activity_service">Service</string>
 </resources>

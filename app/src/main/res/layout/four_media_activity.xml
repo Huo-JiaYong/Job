@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <Button
+        android:id="@+id/musicPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" music play"
+        />
+
+
+    <Button
+        android:id="@+id/musicPause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/musicPlay"
+        android:text=" music pause"
+        />
+
+    <VideoView
+        android:id="@+id/vv_video"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/musicPause"
+        android:layout_gravity="center"
+        />
+
+    <Button
+        android:id="@+id/videoPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vv_video"
+        android:text=" music play"
+        />
+
+
+    <Button
+        android:id="@+id/videoPause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/videoPlay"
+        android:text=" music pause"
+        />
+
+</LinearLayout>

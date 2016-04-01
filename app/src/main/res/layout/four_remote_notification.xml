@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+    <ImageView
+        android:id="@+id/head"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginRight="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/head"
+        />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/head"
+        android:text="光辉岁月 - Beyond"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/epName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/head"
+        android:singleLine="true"
+        android:text="Beyond - 光辉岁月十五年"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        />
+
+    <Button
+        android:id="@+id/left"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/head"
+        android:background="@android:color/transparent"
+        android:text="◁"
+        android:textColor="@android:color/black"
+
+        android:textSize="20sp"
+        />
+
+    <Button
+        android:id="@+id/play"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/left"
+        android:background="@android:color/transparent"
+        android:text="‖"
+
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        />
+
+    <Button
+        android:id="@+id/right"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/play"
+        android:background="@android:color/transparent"
+        android:text="▷"
+
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        />
+
+    <Button
+        android:id="@+id/love"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/transparent"
+        android:text="❤"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        />
+
+</RelativeLayout>
