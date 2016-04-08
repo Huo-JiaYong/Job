@@ -1,143 +1,173 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest package="com.yong.job"
-          xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yong.job" >
 
-    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
-    <uses-permission android:name="android.permission.READ_CONTACTS"/>
-    <uses-permission android:name="android.permission.SEND_SMS"/>
-    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
-    <uses-permission android:name="android.permission.VIBRATE"/>
-    <uses-permission android:name="android.permission.FLASHLIGHT"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
         android:icon="@drawable/blue"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme" >
         <activity
             android:name=".one.FirstActivity"
-            android:label="@string/title_activity_first">
+            android:label="@string/title_activity_first" >
         </activity>
         <activity
             android:name=".one.OtherActivity"
-            android:label="@string/title_activity_other">
+            android:label="@string/title_activity_other" >
             <intent-filter>
-                <action android:name="com.yong.job.one.IMPLICIT"/>
+                <action android:name="com.yong.job.one.IMPLICIT" />
 
-                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
             android:name=".one.LifeActivity"
-            android:label="@string/title_activity_life">
+            android:label="@string/title_activity_life" >
         </activity>
         <activity
             android:name=".one.LayoutActivity"
-            android:label="@string/title_activity_layout">
+            android:label="@string/title_activity_layout" >
         </activity>
         <activity
             android:name=".one.ListActivity"
-            android:label="@string/title_activity_list">
+            android:label="@string/title_activity_list" >
         </activity>
         <activity
             android:name=".two.TwoMainActivity"
-            android:label="@string/title_activity_two_main">
+            android:label="@string/title_activity_two_main" >
         </activity>
         <activity
             android:name=".two.FragmentLifeActivity"
-            android:label="@string/title_activity_fragment_life">
+            android:label="@string/title_activity_fragment_life" >
         </activity>
         <activity
             android:name=".two.news.NewsContentActivity"
-            android:label="@string/title_activity_news_content">
+            android:label="@string/title_activity_news_content" >
         </activity>
         <activity
             android:name=".two.news.NewsTitleActivity"
-            android:label="@string/title_activity_news_title">
+            android:label="@string/title_activity_news_title" >
         </activity>
         <activity
             android:name=".two.qq.LoginActivity"
-            android:label="@string/title_activity_login">
+            android:label="@string/title_activity_login" >
         </activity>
         <activity
             android:name=".two.qq.QQActivity"
-            android:label="@string/title_activity_qq">
+            android:label="@string/title_activity_qq" >
         </activity>
 
-        <receiver android:name=".two.qq.OfflineReceiver">
+        <receiver android:name=".two.qq.OfflineReceiver" >
             <intent-filter>
-                <action android:name="com.yong.job.OFF_LINE"/>
+                <action android:name="com.yong.job.OFF_LINE" />
             </intent-filter>
         </receiver>
 
         <activity
             android:name=".three.FileActivity"
-            android:label="@string/title_activity_file">
+            android:label="@string/title_activity_file" >
         </activity>
         <activity
             android:name=".three.SharedActivity"
-            android:label="@string/title_activity_shared">
+            android:label="@string/title_activity_shared" >
         </activity>
         <activity
             android:name=".three.SQLiteActivity"
-            android:label="@string/title_activity_sqlite">
+            android:label="@string/title_activity_sqlite" >
         </activity>
         <activity
             android:name=".three.PhoneProviderActivity"
-            android:label="@string/title_activity_phone_provider">
+            android:label="@string/title_activity_phone_provider" >
         </activity>
         <activity
             android:name=".three.MyProviderActivity"
-            android:label="@string/title_activity_my_provider">
+            android:label="@string/title_activity_my_provider" >
         </activity>
 
         <provider
             android:name=".three.MyProvider"
             android:authorities="com.yong.job.provider"
-            android:exported="true"/>
+            android:exported="true" />
 
         <receiver
             android:name=".four.SMSReceiver"
-            android:enabled="true">
-            <intent-filter android:priority="100">
-                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            android:enabled="true" >
+            <intent-filter android:priority="100" >
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
             </intent-filter>
         </receiver>
 
         <activity
             android:name=".four.SmsActivity"
-            android:label="@string/title_activity_sms">
+            android:label="@string/title_activity_sms" >
         </activity>
         <activity
             android:name=".four.NotificationActivity"
-            android:label="@string/title_activity_notification">
+            android:label="@string/title_activity_notification" >
         </activity>
         <activity
             android:name=".four.CameraActivity"
-            android:label="@string/title_activity_camera">
+            android:label="@string/title_activity_camera" >
         </activity>
         <activity
             android:name=".four.MediaActivity"
-            android:label="@string/title_activity_media">
+            android:label="@string/title_activity_media" >
         </activity>
         <activity
             android:name=".four.AsynTaskActivity"
-            android:label="@string/title_activity_asyn_task">
+            android:label="@string/title_activity_asyn_task" >
         </activity>
         <activity
             android:name=".four.ServiceActivity"
-            android:label="@string/title_activity_service">
+            android:label="@string/title_activity_service" >
+        </activity>
+
+        <service android:name=".four.MyService" >
+        </service>
+        <service android:name=".four.FrontService" />
+
+        <activity
+            android:name=".five.WebViewActivity"
+            android:label="@string/title_activity_web_view" >
+        </activity>
+        <activity
+            android:name=".five.HttpActivity"
+            android:label="@string/title_activity_http" >
+        </activity>
+        <activity
+            android:name=".five.ZipImageActivity"
+            android:label="@string/title_activity_zip_image" >
+        </activity>
+        <activity
+            android:name=".five.volley.VolleyActivity"
+            android:label="@string/title_activity_volley" >
+        </activity>
+        <activity
+            android:name=".five.okhttp.OkHttpActivity"
+            android:label="@string/title_activity_ok_http" >
+        </activity>
+        <activity
+            android:name=".five.XMLActivity"
+            android:label="@string/title_activity_xml" >
+        </activity>
+        <activity
+            android:name=".five.jackson.JacksonActivity"
+            android:label="@string/title_activity_jackson" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-
-        <service android:name=".four.MyService">
-        </service>
-        <service android:name=".four.FrontService"></service>
     </application>
 
 </manifest>

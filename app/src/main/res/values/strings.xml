@@ -29,4 +29,11 @@
     <string name="title_activity_media">Media</string>
     <string name="title_activity_asyn_task">AsynTask</string>
     <string name="title_activity_service">Service</string>
+    <string name="title_activity_web_view">WebView</string>
+    <string name="title_activity_http">Http</string>
+    <string name="title_activity_zip_image">ZipImage</string>
+    <string name="title_activity_volley">Volley</string>
+    <string name="title_activity_ok_http">OkHttp</string>
+    <string name="title_activity_xml">XML</string>
+    <string name="title_activity_jackson">Jackson</string>
 </resources>
